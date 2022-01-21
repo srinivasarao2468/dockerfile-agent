@@ -11,7 +11,8 @@ pipeline {
   stages{
       stage("abc"){
           steps {
-              sh "echo Hello World"
+                sh 'node --version'
+                sh 'git --version'
           }
       }
   }
